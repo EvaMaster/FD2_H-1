@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWork-1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="personal-data d-flex">
+        <h2 class="personal-data__header">Анкета</h2>
+        <div class="profile">
+            <input class="profile__name" type="text" placeholder="Введите Имя">
+            <input class="profile__surname" type="text" placeholder="Введите Фамиилю">
+            <input class="profile__patronymic" type="text" placeholder="Введите Отчество">
+            <input class="profile__age" type="number" placeholder="Введите Ваш Возраст">
+        </div>
+        <div class="gender-container">
+            <span class="gender_header d-flex">Выберете ваш пол:</span>
+            <input id="gender__male" type="radio" name="gender" value="Мужской">
+            <label for="gender__male">Мужской</label>
+            <input id="gender__famele" type="radio" name="gender" value="Женский">
+            <label for="gender__famale">Женский</label>
+        </div>
+        <button class="profile__button">Enter</button>
+    </div>
+    <div class="result d-none personal-data">
+        <h2 class="personal-data__header">Ваша Анкета</h2>
+        <div class="result-date">
+            <div class="date">
+                <span class="date__item">Ваше Имя:</span>
+                <span class="result_text"></span>
+            </div>
+            <div class="date">
+                <span class="date__item">Ваше Фамилия:</span>
+                <span class="result_text"></span>
+            </div>
+            <div class="date">
+                <span class="date__item">Ваше Отчество:</span>
+                <span class="result_text"></span>
+            </div>
+            <div class="date">
+                <span class="date__item">Ваш Возраст:</span>
+                <span class="result_text"></span>
+            </div>
+            <div class="date">
+                <span class="date__item">Ваш Пол:</span>
+                <span class="result_text"></span>
+            </div>
+        </div>
+    </div>
+    <script src="js/profile.js"></script>
+</body>
+</html>
